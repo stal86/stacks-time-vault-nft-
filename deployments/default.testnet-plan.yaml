@@ -1,0 +1,17 @@
+---
+id: 0
+name: time-vault-nft deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://localhost:18443"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: time-vault-nft
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 100000
+            path: contracts/time-vault-nft.clar
+            clarity-version: 2
+            anchor-block-only: true
